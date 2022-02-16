@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.player {
+  width: 370px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+.timeline {
+  display: flex;
+  margin: 5px 0;
+}
+
+.timeline-chunk {
+  background-color: #717171;
+
+  width: 100%;
+  height: 3px;
+
+  border-radius: 2px;
+}
+
+.timeline-chunk + .timeline-chunk {
+  margin-left: 4px;
+}
+.timeline-chunk-active > .timeline-chunk-inner,
+.timeline-chunk-active ~ .timeline-chunk > .timeline-chunk-inner {
+  width: 0;
+}
+
+.timeline-chunk-inner {
+  height: inherit;
+
+  background-color: #fff;
+
+  border-radius: inherit;
+}
+
+.player-content-wrapper {
+  position: relative;
+}
+
+.player-content img {
+  width: 100%;
+}
+
+.player-chunk {
+  position: relative;
+  display: none;
+}
+
+.player-chunk-overlay {
+  position: absolute;
+  user-select: none;
+}
+
+.player-chunk-active {
+  display: block;
+}
+
+.player-chunk-switcher {
+  position: absolute;
+  z-index: 1;
+
+  width: 30%;
+  height: 100%;
+}
+
+.player-chunk-prev {
+  top: 0;
+  left: 0;
+}
+
+.player-chunk-next {
+  top: 0;
+  right: 0;
+}
+
+.redbrush {
+  display: flex;
+  align-items: center;
+  min-height: 4em;
+
+  color: #fff;
+
+  text-shadow: 1px 1px #000;
+  text-align: center;
+
+  font-size: 25px;
+  font-family: Lobster, cursive;
+
+  background: url('../img/red-brush.png') no-repeat center;
+  background-size: contain;
+}
+
+.poll {
+  background-color: #fff;
+  border-radius: 10px;
+
+  padding: 15px;
+
+  color: #000;
+  font-size: 15px;
+}
+
+.poll-answers {
+  display: flex;
+  margin-top: 10px;
+}
+
+.poll-answers > button {
+  width: 100%;
+
+  margin: 0;
+  padding: 5px;
+
+  border: none;
+}
+
+.poll-answers > button + button {
+  margin-left: 5px;
+}
