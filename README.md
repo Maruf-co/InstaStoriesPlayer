@@ -12,4 +12,4 @@ switch to next/prev stories or just wait unit running line will move forward ins
 ## How it looks
 
 <img src="/img/screenOfPage.png" 
-alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+alt="MarineGEO circle logo"/>
